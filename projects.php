@@ -101,7 +101,7 @@
             <div class="card">
                 <div class="table-responsive">
                     <table class="table" id="projectTable">
-                        <thead>
+                        <thead class="th-resp">
                             <tr>
                                 <th><?= $lang['projects']['view_projects']['table']['no_col'] ?></th>
                                 <th><?= $lang['projects']['view_projects']['table']['project_image_col'] ?></th>
@@ -110,7 +110,7 @@
                                 <th><?= $lang['projects']['view_projects']['table']['action_col'] ?></th>
                             </tr>
                         </thead>
-                        <tbody class="table-border-bottom-0">
+                        <tbody>
                             <?php
                             
                             $projects = $projectObj->getAllProjects();

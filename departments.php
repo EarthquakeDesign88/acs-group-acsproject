@@ -104,7 +104,7 @@
             <div class="card">
                 <div class="table-responsive text-nowrap">
                     <table class="table" id="departmentTable">
-                        <thead>
+                        <thead class="th-resp">
                             <tr>
                                 <th><?= $lang['departments']['table']['no_col'] ?></th>
                                 <th><?= $lang['departments']['table']['department_name_col'] ?></th>
@@ -112,7 +112,7 @@
                                 <th><?= $lang['departments']['table']['action_col'] ?></th>
                             </tr>
                         </thead>
-                        <tbody class="table-border-bottom-0">
+                        <tbody>
                             <?php
 
                             $departments = $departmentObj->getAllDepartments();

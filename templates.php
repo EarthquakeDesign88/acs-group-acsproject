@@ -98,7 +98,7 @@
             <div class="card">
                 <div class="table-responsive text-nowrap">
                     <table class="table" id="templateTable">
-                        <thead>
+                        <thead class="th-resp">
                             <tr>
                                 <th><?= $lang['templates']['table']['no_col'] ?></th>
                                 <th><?= $lang['templates']['table']['template_name_col'] ?></th>
@@ -106,7 +106,7 @@
                                 <th><?= $lang['templates']['table']['action_col'] ?></th>
                             </tr>
                         </thead>
-                        <tbody class="table-border-bottom-0">
+                        <tbody>
                             <?php
                             $templates = $templateObj->getAllTemplates();
                             $num = 0;

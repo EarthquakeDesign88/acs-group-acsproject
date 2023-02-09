@@ -145,7 +145,7 @@ if (!($_SESSION['authenticated'])) {
                                     <div class="table-responsive text-nowrap">
                                         <table class="table" id="projectTable1">
                                             <thead>
-                                                <tr>
+                                                <tr class="th-resp">
                                                     <th><?= $lang['awaiting_review']['table']['no_col'] ?></th>
                                                     <th><?= $lang['awaiting_review']['table']['project_name_col'] ?></th>
                                                     <th><?= $lang['awaiting_review']['table']['operation_col'] ?></th>
@@ -153,7 +153,7 @@ if (!($_SESSION['authenticated'])) {
                                                     <th><?= $lang['awaiting_review']['table']['action_col'] ?></th>
                                                 </tr>
                                             </thead>
-                                            <tbody class="table-border-bottom-0">
+                                            <tbody>
                                                 <?php
                                                 $condition1 = 'authorized';
                                                 $authorizedProjects = $projectObj->historyReviews($condition1);
@@ -222,7 +222,7 @@ if (!($_SESSION['authenticated'])) {
                                 if ($totalUnauthorizedProjects > 0) { ?>
                                     <div class="table-responsive text-nowrap">
                                         <table class="table" id="projectTable2">
-                                            <thead>
+                                            <thead class="th-resp">
                                                 <tr>
                                                     <th><?= $lang['awaiting_review']['table']['no_col'] ?></th>
                                                     <th><?= $lang['awaiting_review']['table']['project_name_col'] ?></th>
@@ -232,7 +232,7 @@ if (!($_SESSION['authenticated'])) {
                                                     <th><?= $lang['awaiting_review']['table']['action_col'] ?></th>
                                                 </tr>
                                             </thead>
-                                            <tbody class="table-border-bottom-0">
+                                            <tbody>
                                                 <?php
                                                 $condition1 = 'unauthorized';
                                                 $condition2 = 'resend request';
@@ -315,7 +315,7 @@ if (!($_SESSION['authenticated'])) {
                                 if ($totalAuthorizedOwners > 0) { ?>
                                     <div class="table-responsive text-nowrap">
                                         <table class="table" id="ownerTable1">
-                                            <thead>
+                                            <thead class="th-resp">
                                                 <tr>
                                                     <th><?= $lang['awaiting_review']['table']['no_col'] ?></th>
                                                     <th><?= $lang['awaiting_review']['table']['owner_name_col'] ?></th>
@@ -323,7 +323,7 @@ if (!($_SESSION['authenticated'])) {
                                                     <th><?= $lang['awaiting_review']['table']['action_col'] ?></th>
                                                 </tr>
                                             </thead>
-                                            <tbody class="table-border-bottom-0">
+                                            <tbody>
                                                 <?php
                                                 $condition1 = 'authorized';
                                                 $authorizedOwners = $ownerObj->historyReviews($condition1);
@@ -376,7 +376,7 @@ if (!($_SESSION['authenticated'])) {
                                 if ($totalUnauthorizedOwners > 0) { ?>
                                     <div class="table-responsive text-nowrap">
                                         <table class="table" id="ownerTable2">
-                                            <thead>
+                                            <thead class="th-resp">
                                                 <tr>
                                                     <th><?= $lang['awaiting_review']['table']['no_col'] ?></th>
                                                     <th><?= $lang['awaiting_review']['table']['owner_name_col'] ?></th>
@@ -385,7 +385,7 @@ if (!($_SESSION['authenticated'])) {
                                                     <th><?= $lang['awaiting_review']['table']['action_col'] ?></th>
                                                 </tr>
                                             </thead>
-                                            <tbody class="table-border-bottom-0">
+                                            <tbody>
                                                 <?php
                                                 $condition1 = 'unauthorized';
                                                 $condition2 = 'resend request';
@@ -405,7 +405,7 @@ if (!($_SESSION['authenticated'])) {
                                                 ?>
                                                     <tr>
                                                         <td data-label="<?= $lang['awaiting_review']['table']['no_col'] ?>"><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong><?= $num ?></strong></td>
-                                                        <td data-label="<?= $lang['awaiting_review']['table']['owner_name_col'] ?>"> <span class="el"></span></td>
+                                                        <td data-label="<?= $lang['awaiting_review']['table']['owner_name_col'] ?>"><span class="ellipsis-tb"><?= $_SESSION['lang'] == "en" ? $owner['owner_name_en'] : $owner['owner_name_th']  ?></span></td>
                                                         <td data-label="<?= $lang['awaiting_review']['table']['operation_col'] ?>" class="text-warning"><?= $owner_action ?></td>
                                                         <td data-label="<?= $lang['awaiting_review']['table']['remark_col'] ?>">
                                                             <?php

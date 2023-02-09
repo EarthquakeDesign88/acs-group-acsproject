@@ -300,7 +300,7 @@
                 <div class="card visually-hidden" id="header-table">
                     <div class="table-responsive text-nowrap">
                         <table class="table" id="search_Table">
-                            <thead>
+                            <thead class="th-resp">
                                  <tr>
                                     <th><?= $lang['projects']['export_projects']['table']['no_col'] ?></th>
                                     <th><?= $lang['projects']['export_projects']['table']['project_name_col'] ?></th>
@@ -439,6 +439,21 @@
 
             var data = $('.search_filter');
             var lang = '<?= $_SESSION['lang']; ?>';
+            var no_col = '<?= $lang['projects']['export_projects']['table']['no_col'] ?>';
+            var project_name_col = '<?= $lang['projects']['export_projects']['table']['project_name_col'] ?>';
+            var project_category_col = '<?= $lang['projects']['export_projects']['table']['project_category_col'] ?>';
+            var project_type_col = '<?= $lang['projects']['export_projects']['table']['project_type_col'] ?>';
+            var project_owner_col = '<?= $lang['projects']['export_projects']['table']['project_owner_col'] ?>';
+            var project_scope_col = '<?= $lang['projects']['export_projects']['table']['project_scope_col'] ?>';
+            var project_department_col = '<?= $lang['projects']['export_projects']['table']['project_department_col'] ?>';
+            var project_location_col = '<?= $lang['projects']['export_projects']['table']['project_location_col'] ?>';
+            var project_description_col = '<?= $lang['projects']['export_projects']['table']['project_description_col'] ?>';
+            var project_area_col = '<?= $lang['projects']['export_projects']['table']['project_area_col'] ?>';
+            var project_value_col = '<?= $lang['projects']['export_projects']['table']['project_value_col'] ?>';
+            var project_year_of_commencement_col = '<?= $lang['projects']['export_projects']['table']['project_year_of_commencement_col'] ?>';
+            var project_year_of_completion_col = '<?= $lang['projects']['export_projects']['table']['project_year_of_completion_col'] ?>';
+            var project_status_col = '<?= $lang['projects']['export_projects']['table']['project_status_col'] ?>';
+
             var check_data = {};
             $("#header-table").removeClass("visually-hidden");
 
@@ -501,6 +516,22 @@
                             { data: 'project_year_of_completion' },
                             { data: lang === "en" ? 'status_name_en' : 'status_name_th' }
                         ],
+                        createdRow: function(row, data, dataIndex) {
+                            $( row ).find('td:eq(0)').attr('data-label', no_col),
+                            $( row ).find('td:eq(1)').attr('data-label', project_name_col).addClass('ellipsis'),
+                            $( row ).find('td:eq(2)').attr('data-label', project_category_col),
+                            $( row ).find('td:eq(3)').attr('data-label', project_type_col),
+                            $( row ).find('td:eq(4)').attr('data-label', project_owner_col),
+                            $( row ).find('td:eq(5)').attr('data-label', project_scope_col),
+                            $( row ).find('td:eq(6)').attr('data-label', project_department_col),
+                            $( row ).find('td:eq(7)').attr('data-label', project_location_col),
+                            $( row ).find('td:eq(8)').attr('data-label', project_description_col).addClass('ellipsis'),
+                            $( row ).find('td:eq(9)').attr('data-label', project_area_col),
+                            $( row ).find('td:eq(10)').attr('data-label', project_value_col),
+                            $( row ).find('td:eq(11)').attr('data-label', project_year_of_commencement_col),
+                            $( row ).find('td:eq(12)').attr('data-label', project_year_of_completion_col),
+                            $( row ).find('td:eq(13)').attr('data-label', project_status_col)
+                        },
                         columnDefs:
                         [
                             {

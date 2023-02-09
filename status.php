@@ -104,7 +104,7 @@
             <div class="card">
                 <div class="table-responsive text-nowrap">
                     <table class="table" id="statusTable">
-                        <thead>
+                        <thead class="th-resp">
                             <tr>
                                 <th><?= $lang['status']['table']['no_col']?></th>
                                 <th><?= $lang['status']['table']['status_name_th']?></th>
@@ -112,7 +112,7 @@
                                 <th><?= $lang['status']['table']['action_col']?></th>
                             </tr>
                         </thead>
-                        <tbody class="table-border-bottom-0">
+                        <tbody>
                             <?php
                             $statuss = $statusObj->getAllStatus();
                             $num = 0;

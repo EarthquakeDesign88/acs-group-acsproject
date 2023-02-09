@@ -104,7 +104,7 @@
             <div class="card">
                 <div class="table-responsive text-nowrap">
                     <table class="table" id="typeTable">
-                        <thead>
+                        <thead class="th-resp">
                             <tr>
                                 <th><?= $lang['types']['table']['no_col'] ?></th>
                                 <th><?= $lang['types']['table']['type_name_th_col'] ?></th>
@@ -112,7 +112,7 @@
                                 <th><?= $lang['types']['table']['action_col'] ?></th>
                             </tr>
                         </thead>
-                        <tbody class="table-border-bottom-0">
+                        <tbody>
                             <?php
                             $types = $typeObj->getAllTypes();
                             $num = 0;

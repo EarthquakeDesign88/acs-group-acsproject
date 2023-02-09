@@ -124,13 +124,13 @@ if (!($_SESSION['authenticated'])) {
                                                 <thead>
                                                     <tr>
                                                         <th><input type='checkbox' class="form-check-input" id="checkAllProjects"> <?= $lang['awaiting_review']['input']['check_all'] ?></th>
-                                                        <th><?= $lang['awaiting_review']['table']['project_name_col'] ?></th>
-                                                        <th><?= $lang['awaiting_review']['table']['operation_col'] ?></th>
-                                                        <th><?= $lang['awaiting_review']['table']['user_request_col'] ?></th>
-                                                        <th><?= $lang['awaiting_review']['table']['user_request_col'] ?></th>
+                                                        <th class="th-resp"><?= $lang['awaiting_review']['table']['project_name_col'] ?></th>
+                                                        <th class="th-resp"><?= $lang['awaiting_review']['table']['operation_col'] ?></th>
+                                                        <th class="th-resp"><?= $lang['awaiting_review']['table']['user_request_col'] ?></th>
+                                                        <th class="th-resp"><?= $lang['awaiting_review']['table']['user_request_col'] ?></th>
                                                     </tr>
                                                 </thead>
-                                                <tbody class="table-border-bottom-0">
+                                                <tbody>
                                                     <?php
                                                     $condition1 = 'waiting for review';
                                                     $awaitingReviewProjects = $projectObj->awaitingReviews();
@@ -210,13 +210,13 @@ if (!($_SESSION['authenticated'])) {
                                                 <thead>
                                                     <tr>
                                                         <th><input type='checkbox' class="form-check-input" id="checkAllOwners"> <?= $lang['awaiting_review']['input']['check_all'] ?></th>
-                                                        <th><?= $lang['awaiting_review']['table']['owner_name_col'] ?></th>
-                                                        <th><?= $lang['awaiting_review']['table']['operation_col'] ?></th>
-                                                        <th><?= $lang['awaiting_review']['table']['user_request_col'] ?></th>
-                                                        <th><?= $lang['awaiting_review']['table']['action_col'] ?></th>
+                                                        <th class="th-resp"><?= $lang['awaiting_review']['table']['owner_name_col'] ?></th>
+                                                        <th class="th-resp"><?= $lang['awaiting_review']['table']['operation_col'] ?></th>
+                                                        <th class="th-resp"><?= $lang['awaiting_review']['table']['user_request_col'] ?></th>
+                                                        <th class="th-resp"><?= $lang['awaiting_review']['table']['action_col'] ?></th>
                                                     </tr>
                                                 </thead>
-                                                <tbody class="table-border-bottom-0">
+                                                <tbody>
                                                     <?php
                                                     $condition1 = 'waiting for review';
                                                     $awaitingReviewOwners = $ownerObj->awaitingReviews();

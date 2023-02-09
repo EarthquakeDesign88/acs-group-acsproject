@@ -104,7 +104,7 @@
             <div class="card">
                 <div class="table-responsive text-nowrap">
                     <table class="table" id="categoryTable">
-                        <thead>
+                        <thead class="th-resp">
                             <tr>
                                 <th><?= $lang['categories']['table']['no_col'] ?></th>
                                 <th><?= $lang['categories']['table']['category_name_th'] ?></th>
@@ -112,7 +112,7 @@
                                 <th><?= $lang['categories']['table']['action_col'] ?></th>
                             </tr>
                         </thead>
-                        <tbody class="table-border-bottom-0">
+                        <tbody>
                             <?php
                             $categories = $categoryObj->getAllCategories();
                             $num = 0;

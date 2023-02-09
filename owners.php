@@ -98,7 +98,7 @@
             <div class="card">
                 <div class="table-responsive text-nowrap">
                     <table class="table" id="ownerTable">
-                        <thead>
+                        <thead class="th-resp">
                             <tr>
                                 <th><?= $lang['owners']['table']['no_col'] ?></th>
                                 <th><?= $lang['owners']['table']['owner_name_th_col'] ?></th>
@@ -106,7 +106,7 @@
                                 <th><?= $lang['owners']['table']['action_col'] ?></th>
                             </tr>
                         </thead>
-                        <tbody class="table-border-bottom-0">
+                        <tbody>
                             <?php
                             $owners = $ownerObj->getAllOwners();
                             $num = 0;

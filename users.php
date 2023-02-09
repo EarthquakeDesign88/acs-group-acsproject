@@ -105,7 +105,7 @@
             <div class="card">
                 <div class="table-responsive text-nowrap">
                     <table class="table" id="userTable">
-                        <thead>
+                        <thead class="th-resp">
                             <tr>
                                 <th><?= $lang['users']['table']['username_col'] ?></th>
                                 <th><?= $lang['users']['table']['fullname_col'] ?></th>
@@ -114,7 +114,7 @@
                                 <th><?= $lang['users']['table']['action_col'] ?></th>
                             </tr>
                         </thead>
-                        <tbody class="table-border-bottom-0">
+                        <tbody>
                             <?php
 
                             $users = $userObj->getAllUsers();

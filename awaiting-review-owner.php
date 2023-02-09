@@ -121,7 +121,7 @@ if (!($_SESSION['authenticated'])) {
                             if ($totalWaitingForReview > 0) { ?>
                                 <div class="table-responsive text-nowrap">
                                     <table class="table" id="ownerTable">
-                                        <thead>
+                                        <thead class="th-resp">
                                             <tr>
                                                 <th><?= $lang['awaiting_review']['table']['no_col'] ?></th>
                                                 <th><?= $lang['awaiting_review']['table']['owner_name_col'] ?></th>
@@ -129,7 +129,7 @@ if (!($_SESSION['authenticated'])) {
                                                 <th><?= $lang['awaiting_review']['table']['action_col'] ?></th>
                                             </tr>
                                         </thead>
-                                        <tbody class="table-border-bottom-0">
+                                        <tbody>
                                             <?php
                                             $condition1 = 'waiting for review';
                                             $waitingForReviewOwners = $ownerObj->requestListsByUser($username, $condition1);
@@ -182,7 +182,7 @@ if (!($_SESSION['authenticated'])) {
                             if ($totalAuthorized > 0) { ?>
                                 <div class="table-responsive text-nowrap">
                                     <table class="table" id="ownerTable2">
-                                        <thead>
+                                        <thead class="th-resp">
                                             <tr>
                                                 <th><?= $lang['awaiting_review']['table']['no_col'] ?></th>
                                                 <th><?= $lang['awaiting_review']['table']['owner_name_col'] ?></th>
@@ -190,7 +190,7 @@ if (!($_SESSION['authenticated'])) {
                                                 <th><?= $lang['awaiting_review']['table']['action_col'] ?></th>
                                             </tr>
                                         </thead>
-                                        <tbody class="table-border-bottom-0">
+                                        <tbody>
                                             <?php
                                             $condition1 = 'authorized';
                                             $authorizedOwners = $ownerObj->requestListsByUser($username, $condition1);
@@ -243,7 +243,7 @@ if (!($_SESSION['authenticated'])) {
                             if ($totalUnauthorized > 0) { ?>
                                 <div class="table-responsive text-nowrap">
                                     <table class="table" id="ownerTable3">
-                                        <thead>
+                                        <thead class="th-resp">
                                             <tr>
                                                 <th><?= $lang['awaiting_review']['table']['no_col'] ?></th>
                                                 <th><?= $lang['awaiting_review']['table']['owner_name_col'] ?></th>
@@ -252,7 +252,7 @@ if (!($_SESSION['authenticated'])) {
                                                 <th><?= $lang['awaiting_review']['table']['action_col'] ?></th>
                                             </tr>
                                         </thead>
-                                        <tbody class="table-border-bottom-0">
+                                        <tbody>
                                             <?php
                                             $condition1 = 'unauthorized';
                                             $condition2 = 'resend request';

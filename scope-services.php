@@ -105,14 +105,14 @@
             <div class="card">
                 <div class="table-responsive text-nowrap">
                     <table class="table" id="scopeTable">
-                        <thead>
+                        <thead class="th-resp">
                             <tr>
                                 <th><?= $lang['scope']['table']['no_col'] ?></th>
                                 <th><?= $lang['scope']['table']['scope_name_col'] ?></th>
                                 <th><?= $lang['scope']['table']['action_col'] ?></th>
                             </tr>
                         </thead>
-                        <tbody class="table-border-bottom-0">
+                        <tbody>
                             <?php
 
                             $scopes = $scopeObj->getAllScopeOfServices();
