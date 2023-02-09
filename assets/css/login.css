@@ -102,3 +102,21 @@ h1 {
   cursor: pointer;
 }
 
+
+@media only screen and (max-width: 768px) {
+  .swal2-title {
+    font-size: 1.175em !important;
+  }
+
+  .swal2-html-container {
+    font-size: 1em !important;
+  }
+
+  .swal2-styled.swal2-confirm {
+    font-size: 0.8em !important;
+  }
+
+}
+
+
+

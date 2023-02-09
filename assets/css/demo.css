@@ -313,6 +313,20 @@ img:hover {
         width: 320px;
     }
 
+    .swal2-title {
+      font-size: 1.175em !important;
+    }
+  
+    .swal2-html-container {
+      font-size: 1em !important;
+    }
+
+    .swal2-styled.swal2-confirm,
+    .swal2-styled.swal2-cancel {
+      font-size: 0.8em !important;
+    }
+  
+
 }
 
 @media only screen and (max-width: 476px) {
@@ -346,6 +360,7 @@ img:hover {
         height: 250px;
     }
 
+    #show_project,
     #show_owner  {
         width: 87%;
     }
@@ -354,6 +369,8 @@ img:hover {
     .dropdown-item,
     .lang,
     .text-pname,
+    .text-title,
+    .text-main,
     .list-group-item,
     .form-control, 
     .form-select {
