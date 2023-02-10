@@ -172,7 +172,7 @@
 					"project_name_col" => "Project Name",
 					"project_category_col" => "Project Category",
 					"project_type_col" => "Project Type",
-					"project_department_col" => "Project Departmentร",
+					"project_department_col" => "Project Department",
 					"project_owner_col" => "Project Owner",
 					"project_location_col" => "Project Location",
 					"project_scope_col" => "Project Scope Of Service",

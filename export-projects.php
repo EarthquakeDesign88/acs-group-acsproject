@@ -119,12 +119,12 @@
         <!-- Content -->
         <div class="container-xxl flex-grow-1 container-p-y">
             <div class="row mb-2">
-                <div class="col-9">
+                <div class="col-8">
                     <h3 class="card-title text-primary">
                         <?= $lang['projects']['export_projects']['title_header'] ?>
                     </h3>
                 </div>
-                <div class="col-3 button-right" id="button_ex"></div>
+                <div class="col-4 button-right" id="button_ex"></div>
             </div>
 
             <div class="card">
@@ -308,7 +308,7 @@
                                     <th><?= $lang['projects']['export_projects']['table']['project_type_col'] ?></th>
                                     <th><?= $lang['projects']['export_projects']['table']['project_owner_col'] ?></th>
                                     <th><?= $lang['projects']['export_projects']['table']['project_scope_col'] ?></th>
-                                    <th><?= $lang['projects']['export_projects']['table']['project_department_col'] ?></th>
+                                    <th><?= $lang['projects']['export_projects']['project_department'] ?></th>
                                     <th><?= $lang['projects']['export_projects']['table']['project_location_col'] ?></th>
                                     <th><?= $lang['projects']['export_projects']['table']['project_description_col'] ?></th>
                                     <th><?= $lang['projects']['export_projects']['table']['project_area_col'] ?></th>
@@ -319,6 +319,7 @@
                                  </tr>
                             </thead>
                         </table>
+                        
                     </div>
 
                 </div>
@@ -445,7 +446,7 @@
             var project_type_col = '<?= $lang['projects']['export_projects']['table']['project_type_col'] ?>';
             var project_owner_col = '<?= $lang['projects']['export_projects']['table']['project_owner_col'] ?>';
             var project_scope_col = '<?= $lang['projects']['export_projects']['table']['project_scope_col'] ?>';
-            var project_department_col = '<?= $lang['projects']['export_projects']['table']['project_department_col'] ?>';
+            var project_department_col = '<?= $lang['projects']['export_projects']['project_department'] ?>';
             var project_location_col = '<?= $lang['projects']['export_projects']['table']['project_location_col'] ?>';
             var project_description_col = '<?= $lang['projects']['export_projects']['table']['project_description_col'] ?>';
             var project_area_col = '<?= $lang['projects']['export_projects']['table']['project_area_col'] ?>';
@@ -480,17 +481,17 @@
                         "pageLength": "50",
                         destroy: true,
                         "searching": false,
-                                "language":{
-                            "lengthMenu":"<?= $lang['datatable']['language']['lengthMenu']; ?>",
-                            "info": "<?= $lang['datatable']['language']['info']; ?>",
-                            "search":"<?= $lang['datatable']['language']['search']; ?>",
-                            "zeroRecords": "<?= $lang['datatable']['language']['zeroRecords']; ?>",
-                            "infoEmpty": "<?= $lang['datatable']['language']['infoEmpty']; ?>",
-                            "infoFiltered": "<?= $lang['datatable']['language']['infoFiltered']; ?>",
-                            "paginate":{
-                                "previous":"<?= $lang['datatable']['language']['paginate']['previous']; ?>",
-                                "next":"<?= $lang['datatable']['language']['paginate']['next']; ?>"
-                            }
+                        "language":{
+                        "lengthMenu":"<?= $lang['datatable']['language']['lengthMenu']; ?>",
+                        "info": "<?= $lang['datatable']['language']['info']; ?>",
+                        "search":"<?= $lang['datatable']['language']['search']; ?>",
+                        "zeroRecords": "<?= $lang['datatable']['language']['zeroRecords']; ?>",
+                        "infoEmpty": "<?= $lang['datatable']['language']['infoEmpty']; ?>",
+                        "infoFiltered": "<?= $lang['datatable']['language']['infoFiltered']; ?>",
+                        "paginate":{
+                            "previous":"<?= $lang['datatable']['language']['paginate']['previous']; ?>",
+                            "next":"<?= $lang['datatable']['language']['paginate']['next']; ?>"
+                        }
                         },
                         buttons: [
                             {
@@ -517,20 +518,20 @@
                             { data: lang === "en" ? 'status_name_en' : 'status_name_th' }
                         ],
                         createdRow: function(row, data, dataIndex) {
-                            $( row ).find('td:eq(0)').attr('data-label', no_col),
-                            $( row ).find('td:eq(1)').attr('data-label', project_name_col).addClass('ellipsis'),
-                            $( row ).find('td:eq(2)').attr('data-label', project_category_col),
-                            $( row ).find('td:eq(3)').attr('data-label', project_type_col),
-                            $( row ).find('td:eq(4)').attr('data-label', project_owner_col),
-                            $( row ).find('td:eq(5)').attr('data-label', project_scope_col),
-                            $( row ).find('td:eq(6)').attr('data-label', project_department_col),
-                            $( row ).find('td:eq(7)').attr('data-label', project_location_col),
-                            $( row ).find('td:eq(8)').attr('data-label', project_description_col).addClass('ellipsis'),
-                            $( row ).find('td:eq(9)').attr('data-label', project_area_col),
-                            $( row ).find('td:eq(10)').attr('data-label', project_value_col),
-                            $( row ).find('td:eq(11)').attr('data-label', project_year_of_commencement_col),
-                            $( row ).find('td:eq(12)').attr('data-label', project_year_of_completion_col),
-                            $( row ).find('td:eq(13)').attr('data-label', project_status_col)
+                            $( row ).find('td:eq(0)').attr('data-label', no_col).addClass('ellipsis-ex-sup'),
+                            $( row ).find('td:eq(1)').attr('data-label', project_name_col).addClass('ellipsis-ex'),
+                            $( row ).find('td:eq(2)').attr('data-label', project_category_col).addClass('ellipsis-ex-sup'),
+                            $( row ).find('td:eq(3)').attr('data-label', project_type_col).addClass('ellipsis-ex-sup'),
+                            $( row ).find('td:eq(4)').attr('data-label', project_owner_col).addClass('ellipsis-ex-sup'),
+                            $( row ).find('td:eq(5)').attr('data-label', project_scope_col).addClass('ellipsis-ex-sup'),
+                            $( row ).find('td:eq(6)').attr('data-label', project_department_col).addClass('ellipsis-ex-sup'),
+                            $( row ).find('td:eq(7)').attr('data-label', project_location_col).addClass('ellipsis-ex-sup'),
+                            $( row ).find('td:eq(8)').attr('data-label', project_description_col).addClass('ellipsis-ex'),
+                            $( row ).find('td:eq(9)').attr('data-label', project_area_col).addClass('ellipsis-ex-sup')
+                            $( row ).find('td:eq(10)').attr('data-label', project_value_col).addClass('ellipsis-ex-sup')
+                            $( row ).find('td:eq(11)').attr('data-label', project_year_of_commencement_col).addClass('ellipsis-ex-sup')
+                            $( row ).find('td:eq(12)').attr('data-label', project_year_of_completion_col).addClass('ellipsis-ex-sup')
+                            $( row ).find('td:eq(13)').attr('data-label', project_status_col).addClass('ellipsis-ex-sup')
                         },
                         columnDefs:
                         [
