@@ -93,7 +93,7 @@ if (!($_SESSION['authenticated'])) {
                     <div class="row mb-2">
                         <div class="col-8">
                             <h3 class="card-title text-primary">
-                                <?= $lang['awaiting_review']['title_header'] ?> <span id="showCount" class="text-warning" style="font-size: 18px;"></span>
+                                <?= $lang['awaiting_review']['title_header'] ?> <span id="showCount" class="text-warning"></span>
                             </h3>
                         </div>
                         <div class="col-4">

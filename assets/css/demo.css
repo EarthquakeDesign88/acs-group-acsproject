@@ -264,6 +264,10 @@ img:hover {
   font-size: 12px;
 }
 
+#showCount {
+  font-size: 16px;
+}
+
 
 @media only screen and (max-width: 1290px) {
     table { 
@@ -370,6 +374,10 @@ img:hover {
   .ellipsis-tb {
     width: 270px;
   }
+
+  #showCount {
+    font-size: 12px !important;
+  }
 }
 
 
@@ -415,10 +423,6 @@ img:hover {
 
   #show_data {
     width: 91%;
-  }
-
-  #showCount {
-    font-size: 16px;
   }
 
   b,
