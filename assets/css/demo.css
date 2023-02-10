@@ -374,10 +374,6 @@ img:hover {
   .ellipsis-tb {
     width: 270px;
   }
-
-  #showCount {
-    font-size: 12px !important;
-  }
 }
 
 
@@ -435,6 +431,10 @@ img:hover {
   .form-control, 
   .form-select {
       font-size: 12px;
+  }
+
+  #showCount {
+    font-size: 12px !important;
   }
 
     
