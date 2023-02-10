@@ -264,8 +264,8 @@ img:hover {
   font-size: 12px;
 }
 
-#showCount {
-  font-size: 16px;
+.showCount {
+  font-size: 16px !important;
 }
 
 
@@ -433,7 +433,7 @@ img:hover {
       font-size: 12px;
   }
 
-  #showCount {
+  .showCount {
     font-size: 12px !important;
   }
 
