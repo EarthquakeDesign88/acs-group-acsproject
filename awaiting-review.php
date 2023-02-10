@@ -91,12 +91,12 @@ if (!($_SESSION['authenticated'])) {
                 <!-- Content -->
                 <div class="container-xxl flex-grow-1 container-p-y">
                     <div class="row mb-2">
-                        <div class="col-6">
+                        <div class="col-8">
                             <h3 class="card-title text-primary">
                                 <?= $lang['awaiting_review']['title_header'] ?> <span id="showCount" class="text-warning" style="font-size: 18px;"></span>
                             </h3>
                         </div>
-                        <div class="col-6">
+                        <div class="col-4">
                             <a href="history-review.php" class="btn rounded-pill btn-icon btn-info float-end" title="<?= $lang['awaiting_review']['title']['history_review'] ?>"><i class='bx bx-history'></i></a>
                         </div>
                     </div>
