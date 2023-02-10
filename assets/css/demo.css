@@ -417,6 +417,10 @@ img:hover {
     width: 91%;
   }
 
+  #showCount {
+    font-size: 16px;
+  }
+
   b,
   .dropdown-item,
   .lang,
