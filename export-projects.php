@@ -502,36 +502,36 @@
                         ],
                         data: data,
                         columns: [
-                            { data: 'number' },
-                            { data: lang === "en" ? 'project_name_en' : 'project_name_th' },
-                            { data: lang === "en" ? 'pcategory_name_en' : 'pcategory_name_th' },
-                            { data: lang === "en" ? 'type_name_en' : 'type_name_th' },
-                            { data: lang === "en" ? 'owner_name_en' : 'owner_name_th' },
-                            { data: lang === "en" ? 'scope_name_en' : 'scope_name_th' },
-                            { data: 'department_name' },
-                            { data: lang === "en" ? 'project_location_en' : 'project_location_th' },
-                            { data: lang === "en" ? 'project_description_en' : 'project_description_th' },
-                            { data: 'project_area' },
-                            { data: 'project_value' },
-                            { data: 'project_year_of_commencement' },
-                            { data: 'project_year_of_completion' },
-                            { data: lang === "en" ? 'status_name_en' : 'status_name_th' }
+                            { data: 'number' ,className: 'ellipsis-ex' },
+                            { data: lang === "en" ? 'project_name_en' : 'project_name_th' ,className: 'ellipsis-ex' },
+                            { data: lang === "en" ? 'pcategory_name_en' : 'pcategory_name_th' ,className: 'ellipsis-ex' },
+                            { data: lang === "en" ? 'type_name_en' : 'type_name_th' ,className: 'ellipsis-ex' },
+                            { data: lang === "en" ? 'owner_name_en' : 'owner_name_th' ,className: 'ellipsis-ex' },
+                            { data: lang === "en" ? 'scope_name_en' : 'scope_name_th' ,className: 'ellipsis-ex' },
+                            { data: 'department_name' ,className: 'ellipsis-ex' },
+                            { data: lang === "en" ? 'project_location_en' : 'project_location_th' ,className: 'ellipsis-ex' },
+                            { data: lang === "en" ? 'project_description_en' : 'project_description_th' ,className: 'ellipsis-ex' },
+                            { data: 'project_area' ,className: 'ellipsis-ex' },
+                            { data: 'project_value' ,className: 'ellipsis-ex' },
+                            { data: 'project_year_of_commencement' ,className: 'ellipsis-ex' },
+                            { data: 'project_year_of_completion' ,className: 'ellipsis-ex' },
+                            { data: lang === "en" ? 'status_name_en' : 'status_name_th' ,className: 'ellipsis-ex' },
                         ],
                         createdRow: function(row, data, dataIndex) {
-                            $( row ).find('td:eq(0)').attr('data-label', no_col).addClass('ellipsis-ex-sup'),
-                            $( row ).find('td:eq(1)').attr('data-label', project_name_col).addClass('ellipsis-ex'),
-                            $( row ).find('td:eq(2)').attr('data-label', project_category_col).addClass('ellipsis-ex-sup'),
-                            $( row ).find('td:eq(3)').attr('data-label', project_type_col).addClass('ellipsis-ex-sup'),
-                            $( row ).find('td:eq(4)').attr('data-label', project_owner_col).addClass('ellipsis-ex-sup'),
-                            $( row ).find('td:eq(5)').attr('data-label', project_scope_col).addClass('ellipsis-ex-sup'),
-                            $( row ).find('td:eq(6)').attr('data-label', project_department_col).addClass('ellipsis-ex-sup'),
-                            $( row ).find('td:eq(7)').attr('data-label', project_location_col).addClass('ellipsis-ex-sup'),
-                            $( row ).find('td:eq(8)').attr('data-label', project_description_col).addClass('ellipsis-ex'),
-                            $( row ).find('td:eq(9)').attr('data-label', project_area_col).addClass('ellipsis-ex-sup')
-                            $( row ).find('td:eq(10)').attr('data-label', project_value_col).addClass('ellipsis-ex-sup')
-                            $( row ).find('td:eq(11)').attr('data-label', project_year_of_commencement_col).addClass('ellipsis-ex-sup')
-                            $( row ).find('td:eq(12)').attr('data-label', project_year_of_completion_col).addClass('ellipsis-ex-sup')
-                            $( row ).find('td:eq(13)').attr('data-label', project_status_col).addClass('ellipsis-ex-sup')
+                            $( row ).find('td:eq(0)').attr('data-label', no_col)
+                            $( row ).find('td:eq(1)').attr('data-label', project_name_col)
+                            $( row ).find('td:eq(2)').attr('data-label', project_category_col)
+                            $( row ).find('td:eq(3)').attr('data-label', project_type_col)
+                            $( row ).find('td:eq(4)').attr('data-label', project_owner_col)
+                            $( row ).find('td:eq(5)').attr('data-label', project_scope_col)
+                            $( row ).find('td:eq(6)').attr('data-label', project_department_col)
+                            $( row ).find('td:eq(7)').attr('data-label', project_location_col)
+                            $( row ).find('td:eq(8)').attr('data-label', project_description_col)
+                            $( row ).find('td:eq(9)').attr('data-label', project_area_col)
+                            $( row ).find('td:eq(10)').attr('data-label', project_value_col)
+                            $( row ).find('td:eq(11)').attr('data-label', project_year_of_commencement_col)
+                            $( row ).find('td:eq(12)').attr('data-label', project_year_of_completion_col)
+                            $( row ).find('td:eq(13)').attr('data-label', project_status_col)
                         },
                         columnDefs:
                         [
