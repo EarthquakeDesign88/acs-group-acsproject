@@ -7,10 +7,10 @@ use PDOException;
     
 class Db {
     /* Development */
-    // private $serverName = "localhost";
-    // private $dbUsername = "root";
-    // private $dbPassword = "";
-    // private $dbName = "set-acsproject";
+    private $serverName = "localhost";
+    private $dbUsername = "root";
+    private $dbPassword = "";
+    private $dbName = "acsproject";
 
     /* PPE */
     // private $serverName = "localhost";
@@ -19,10 +19,10 @@ class Db {
     // private $dbName = "cp261186_acs-project-ppe";
 
     /* PROD */
-    private $serverName = "localhost";
-    private $dbUsername = "cp261186_acsdev";
-    private $dbPassword = "88Acsdev@88@88";
-    private $dbName = "cp261186_acs-project-prod";
+    // private $serverName = "localhost";
+    // private $dbUsername = "cp261186_acsdev";
+    // private $dbPassword = "88Acsdev@88@88";
+    // private $dbName = "cp261186_acs-project-prod";
 
     protected $conn;
 
