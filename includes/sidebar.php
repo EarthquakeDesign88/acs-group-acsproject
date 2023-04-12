@@ -70,6 +70,7 @@
                 <li class="menu-item <?php echo $currentPage == 'templates' 
                             || $currentPage == 'create-template' 
                             || $currentPage == 'edit-template'
+                            || $currentPage == 'proposals'
                             ? 'active': '' ?>">
                     <a href="javascript:void(0);" class="menu-link menu-toggle">
                         <i class="menu-icon tf-icons bx bx-bar-chart-square"></i>
@@ -80,6 +81,14 @@
                         <li class="menu-item <?php echo $currentPage == 'templates' ? 'active': '' ?>">
                             <a href="templates.php" class="menu-link">
                                 <div data-i18n="View templates"><?= $lang['sub_menu']['view_templates'] ?></div>
+                            </a>
+                        </li>
+                    </ul> 
+
+                    <ul class="menu-sub">
+                        <li class="menu-item <?php echo $currentPage == 'proposals' ? 'active': '' ?>">
+                            <a href="proposals.php" class="menu-link">
+                                <div data-i18n="View proposals"><?= $lang['sub_menu']['view_proposals'] ?></div>
                             </a>
                         </li>
                     </ul> 

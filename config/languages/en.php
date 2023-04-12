@@ -17,6 +17,7 @@
 		],
 		"sub_menu" => [
 			"view_templates" => "View Templates",
+			"view_proposals" => "View Proposals",
 			"view_projects" => "View Projects",
 			"export_projects" => "Search Projects",
 			"view_owners" => "View Project Owners",
@@ -524,6 +525,18 @@
 					"cancel" => "Cancel"
 				],
 			]
+		],
+		"proposals" => [
+			"title_header" => "Proposals",
+			"create_proposal_header" => "Proposal",
+			"edit_proposal_header" => "Edit Proposal",
+			"btn" => [
+				"new_proposal" => "New Proposal",
+				"back" => "Back",
+				"save" => "Save changes",
+				"reset" => "Reset"
+			],
+
 		],
 		"alert" => [
 			"confirm_action" => "Please press OK to continue",

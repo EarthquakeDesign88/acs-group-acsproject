@@ -17,6 +17,7 @@
 		],
 		"sub_menu" => [
 			"view_templates" => "ดูแม่แบบ",
+			"view_proposals" => "ใบเสนอ",
 			"view_projects" => "ดูข้อมูลโครงการ",
 			"export_projects" => "ค้นหาข้อมูลโครงการ",
 			"view_owners" => "ดูเจ้าของโครงการ",
@@ -524,6 +525,18 @@
 					"cancel" => "ยกเลิก"
 				],
 			]
+		],
+		"proposals" => [
+			"title_header" => "ใบเสนอ",
+			"create_proposal_header" => "สร้างใบเสนอ",
+			"edit_proposal_header" => "แก้ไขใบเสนอ",
+			"btn" => [
+				"new_proposal" => "สร้างใบเสนอ",
+				"back" => "กลับ",
+				"save" => "บันทึก",
+				"reset" => "รีเซ็ต"
+			],
+
 		],
 		"alert" => [
 			"confirm_action" => "กรุณากด ตกลง เพื่อดำเนินการต่อ",
