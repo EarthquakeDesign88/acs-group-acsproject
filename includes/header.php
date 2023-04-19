@@ -12,10 +12,9 @@
                 </div>
                 <ul>
                     <li><a href="#services">Services</a></li>
-                    <!-- <li><a href="#ourprojects">Our Projects</a></li> -->
+                    <li><a href="#ourprojects">Our Projects</a></li>
                     <li><a href="#aboutus">About Us</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="./login.php">ACS Project</a></li>
                 </ul>
             </div>
         </div>

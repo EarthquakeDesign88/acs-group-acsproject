@@ -1,0 +1,15 @@
+body {
+    background-color: #e4e4e4;
+}
+
+a {
+    text-decoration: none; 
+    background-color: none;
+    color: #000;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+}
+
+
